@@ -1,0 +1,11 @@
+# configs/hostapd.conf (example — adjust iface/driver/channel/region)
+interface=wlan0
+driver=nl80211
+ssid=Lab_AP
+hw_mode=g
+channel=6
+auth_algs=1
+wpa=2
+wpa_passphrase=changeme1234
+wpa_key_mgmt=WPA-PSK
+rsn_pairwise=CCMP

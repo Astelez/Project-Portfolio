@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Captures & large artifacts
+artifacts/
+*.pcap
+*.pcapng
+*.mem
+*.img
+*.E01
+*.zip
+
+# Reports
+*.pdf
+*.docx

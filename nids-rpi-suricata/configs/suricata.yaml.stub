@@ -1,0 +1,16 @@
+# configs/suricata.yaml (stub): copy/merge into /etc/suricata/suricata.yaml
+# Ensure HOME_NET and interface are set correctly.
+vars:
+  address-groups:
+    HOME_NET: "[192.168.0.0/16]"
+
+af-packet:
+  - interface: eth0
+    cluster-type: cluster_flow
+    cluster-id: 99
+    defrag: yes
+    checksum-checks: auto
+
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - local.rules
